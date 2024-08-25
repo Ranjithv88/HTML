@@ -1,0 +1,226 @@
+/* Css File for Peter.html */
+
+/*  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.outerBody {
+    background-image: url('../IMAGE/Peter/PeterBackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+li,a,button {
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFC300 ;
+    text-decoration: none;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgb(235, 196, 69);
+    border-radius: 100px;
+    box-shadow: 10px 10px rgba(121, 14, 163, 0.363);
+}
+
+.image {
+    cursor: pointer;
+}
+
+.link {
+    list-style: none;
+}
+
+.link li {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: rgba(20, 112, 134, 0.2);
+    border-radius: 0px;
+    font-size: 10px;
+}
+
+.link li a {
+    transition: all 0.3s ease 0s;
+    color: rgba(20, 112, 134, 1);
+}
+
+.link li a:hover {
+    color: rgba(197, 17, 17, 0.527);
+    padding: 14px 14px;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(20, 112, 134, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: rgba(121, 14, 163, 0.5)
+}
+
+header a img {
+    height: 68px;
+    width: 68px;
+
+}
+
+.image:hover {
+    height: 80px;
+    width: 80px;
+}
+
+h4 {
+    color: black;
+    font-family: "Matemasie", system-ui;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0px 8px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: "Matemasie", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+h1:hover {
+    color: rgba(20, 112, 134, 1);
+    cursor: context-menu;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 30px;
+}
+
+header {
+    background-color: rgba(27, 20, 28, 1);
+    padding: 20px 10px;
+}
+
+.search {
+    border: none;
+    padding: 4px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.body {
+    display: flexbox;
+    align-items: center;
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+.h3One {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+.body p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: whitesmoke;
+    font-style: italic;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.h3:hover {
+    color: rgba(235, 196, 69, 1);
+}
+
+.tv {
+    padding: 40px 50px;
+    background-color: rgb(27, 20, 28);
+
+}
+
+.guy {
+    display: flex;
+    height: 600px;
+    background-color: rgba(117, 170, 10, 0.932);
+    border-top: 28px solid rgba(235, 196, 69, 1);
+    border-right: 60px solid rgba(235, 196, 69, 1);
+    border-bottom: 28px solid rgba(235, 196, 69, 1);
+    border-left: 28px solid rgba(235, 196, 69, 1);
+    border-radius: 90px; /* Top-left, top-right, bottom-right, bottom-left */
+}
+
+.guy a img {
+    height: 520px; 
+    width: 520px;
+}
+
+.guy a img:hover {
+    height: 600px; 
+    width: 600px;
+}
+
+.guy p {
+    text-align: justify;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 22px;
+    font-style: italic;
+    text-indent: 50px;
+}
+
+.f h5 {
+    position: absolute;
+    top: 172%;
+    right: 5.5%;
+    background-color: rgb(4, 153, 219);
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+.s h5{
+    position: absolute;
+    top: 185%;
+    right: 5.5%;
+    background-color: rgb(4, 153, 219);
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+

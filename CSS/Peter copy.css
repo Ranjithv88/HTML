@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.outer {
+    padding: 60px 60px;
+    background-color: rgba(27, 20, 28, 1);
+}
+
+.tv {
+    border-top: 28px solid rgba(235, 196, 69, 1);
+    border-right: 15px solid rgba(235, 196, 69, 1);
+    border-bottom: 28px solid rgba(235, 196, 69, 1);
+    border-left: 20px solid rgba(235, 196, 69, 1);
+    border-radius: 90px;
+    padding: 1px 1px;
+    background-color:  rgba(235, 196, 69, 1);
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    box-shadow: 30px 30px rgba(148, 148, 148, 0.644);
+}
+
+.guy {
+    display: flex;
+    height: 500px;
+    width: 90%;
+    background-color: rgba(117, 170, 10, 0.932);
+    border-radius: 90px;
+}
+
+.guy a img {
+    height: 400px; 
+    width: 400px;
+}
+
+.guy p {
+    text-align: justify;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 22px;
+    font-style: italic;
+    text-indent: 50px;
+}
+
+.f {
+    background-color: rgba(235, 196, 69, 1);
+    border-radius: 0px 90px 90px 0px;
+    padding-top: 80px;
+}
+
+.s {
+    padding-top: 30px;
+}
+
+.f button {
+    color: black;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer; 
+    background-color: rgb(4, 153, 219);
+    box-shadow: 4px 5px 1px rgba(27, 20, 28, 1);
+}
+
+.f button:hover {
+    height: 45px;
+    width: 45px;
+}
+
+.s button {
+    color: black;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer; 
+    background-color: rgb(4, 153, 219);
+    box-shadow: 4px 5px 1px rgba(27, 20, 28, 1);
+}
+
+.s button:hover {
+    height: 45px;
+    width: 45px;
+}
+
