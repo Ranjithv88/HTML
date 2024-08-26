@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .value {
+    font-size: 24px;
+  }
+  
+  .profile {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .guy {
+    display: flex;
+    height: 600px;
+    width: 85%;
+    background-color: rgba(117, 170, 10, 0.932);
+    border-radius: 90px;
+}
+
+.guy .channe02 a img {
+    padding-left: 4px;
+    height: 500px; 
+    width: 500px;
+}
+
+.guy .channe02 a img:hover {
+    padding-left: 4px;
+    height: 550px; 
+    width: 550px;
+}
+
+.guy .channe02 p {
+    text-align: justify;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 50px;
+}
+
+.channe01 img {
+    height: 1029.340;
+    width: 600;
+}
+

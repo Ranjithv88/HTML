@@ -1,0 +1,535 @@
+/* Css File for Peter.html */
+
+/* All Element */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+/* Nav Bar Design */
+.outerBody {
+    background-image: url('../IMAGE/Peter/PeterBackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+li,a,button {
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFC300 ;
+    text-decoration: none;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgb(235, 196, 69);
+    border-radius: 100px;
+    box-shadow: 10px 10px rgba(121, 14, 163, 0.363);
+}
+
+.image {
+    cursor: pointer;
+}
+
+.link {
+    list-style: none;
+}
+
+.link li {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: rgba(20, 112, 134, 0.2);
+    border-radius: 0px;
+    font-size: 10px;
+}
+
+.link li a {
+    transition: all 0.3s ease 0s;
+    color: rgba(20, 112, 134, 1);
+}
+
+.link li a:hover {
+    color: rgba(197, 17, 17, 0.527);
+    padding: 14px 14px;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(20, 112, 134, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: rgba(121, 14, 163, 0.5)
+}
+
+header a img {
+    height: 68px;
+    width: 68px;
+
+}
+
+.image:hover {
+    height: 80px;
+    width: 80px;
+}
+
+h4 {
+    color: black;
+    font-family: "Matemasie", system-ui;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0px 8px;
+    margin-bottom: 8px;
+}
+
+.head h1 {
+    font-size: 20px;
+    font-family: "Matemasie", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.head h1:hover {
+    color: rgba(20, 112, 134, 1);
+    cursor: context-menu;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 30px;
+}
+
+header {
+    background-color: rgba(27, 20, 28, 1);
+    padding: 20px 10px;
+}
+
+.search {
+    border: none;
+    padding: 4px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.body {
+    display: flexbox;
+    align-items: center;
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+.h3One {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+.body p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: whitesmoke;
+    font-style: italic;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.h3:hover {
+    color: rgba(235, 196, 69, 1);
+}
+
+
+/* Tv Model Design */
+.outer {
+    padding: 60px 60px;
+    background-color: rgba(27, 20, 28, 1);
+}
+
+.tv {
+    border-top: 28px solid rgba(235, 196, 69, 1);
+    border-right: 8px solid rgba(235, 196, 69, 1);
+    border-bottom: 28px solid rgba(235, 196, 69, 1);
+    border-left: 8px solid rgba(235, 196, 69, 1);
+    border-radius: 90px;
+    padding: 1px 1px;
+    background-color:  rgba(235, 196, 69, 1);
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    box-shadow: 40px 50px rgba(148, 148, 148, 0.644);
+}
+
+.guy {
+    display: flex;
+    height: 600px;
+    width: 85%;
+    background-color: rgba(117, 170, 10, 0.932);
+    border-radius: 90px;
+}
+
+.guy a img {
+    padding-left: 4px;
+    height: 500px; 
+    width: 500px;
+}
+
+.guy a img:hover {
+    padding-left: 4px;
+    height: 550px; 
+    width: 550px;
+}
+
+.guy p {
+    text-align: justify;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 50px;
+}
+
+.hidden {
+    background-image: url(../IMAGE/Peter/no\ signal\ .jpeg);
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.f {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flexbox;
+    justify-content: center;
+    background-color: rgba(235, 196, 69, 1);
+    border-radius: 0px 90px 90px 0px;
+    padding-top: 80px;
+}
+
+.s {
+    padding-right: 10px;
+    display: flexbox;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.f button {
+    color: black;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    cursor: pointer; 
+    background-color: rgb(4, 153, 219);
+    box-shadow: 5px 6px 1px rgba(27, 20, 28, 1);
+}
+
+.f button:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.s button {
+    color: black;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    cursor: pointer; 
+    background-color: rgb(4, 153, 219);
+    box-shadow: 5px 6px 1px rgba(27, 20, 28, 1);
+}
+
+.s button:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.tvTriangle {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.f button:hover .tvTriangle {
+    font-size: 34px;
+}
+
+.s button:hover .tvTriangle {
+    font-size: 34px;
+}
+
+
+/* Main Characters Content */
+.outerCharacters {
+    background-color: rgb(27, 20, 28);
+    display: flexbox;
+    justify-content: center;
+    padding: 100px 0px;
+    height: 1200px;
+
+}
+
+.characters {
+    padding: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.characters h1 {
+    font-family: "Griffy", system-ui;
+    font-weight: 400;
+    color: whitesmoke;
+    font-size: 80px;
+    text-transform: uppercase;
+
+    /* background: linear-gradient(
+        120deg, rgba(0, 0, 0, 0.966) 4%,
+        transparent 4%,transparent 5%,
+        rgba(255, 0, 0, 0.452) 9%,rgba(255, 0, 0, 0.452) 18%,
+        transparent 19%,transparent 20%,
+        rgba(0, 128, 0, 0.822) 25%, rgba(0, 128, 0, 0.884) 35%, 
+        transparent 39%, transparent 40%,
+        rgba(0, 0, 255, 0.747) 45% ,rgba(0, 0, 255, 0.685) 55%, 
+        transparent 59%, transparent 60%,
+        rgba(255, 255, 0, 0.603) 65% , rgba(255, 255, 0, 0.753) 75%, 
+        transparent 79% ,transparent 80%, 
+        rgba(255, 166, 0, 0.692) 85%,rgba(255, 166, 0, 0.692) 95%,
+        transparent 97% 
+        ); */
+
+    /* background: linear-gradient(120deg, rgba(255, 0, 0, 0.527) 16%,transparent 20%,transparent 20%, rgba(0, 128, 0, 0.685) 20%,rgba(0, 128, 0, 0.685) 36%, transparent 40%,transparent 40%, rgba(0, 0, 255, 0.459) 40%,rgba(0, 0, 255, 0.459) 56%, transparent 60%,transparent 60%,orange 60%, orange 76%, transparent 80%, transparent 80%, pink 80% ); */
+
+    background: linear-gradient(120deg, rgb(4, 153, 219) 16%,transparent 20%,transparent 20%, rgb(235, 196, 69) 20%,rgb(235, 196, 69) 36%, transparent 40%,transparent 40%, rgb(4, 153, 219) 40%,rgb(4, 153, 219) 56%, transparent 60%,transparent 60%,rgb(235, 196, 69) 60%, rgb(235, 196, 69) 76%, transparent 80%, transparent 80%, rgb(4, 153, 219) 80% );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 4px solid whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 10px 5px whitesmoke, -10px -5px whitesmoke, -10px 5px whitesmoke, 10px -5px whitesmoke;
+}
+
+.characters h1:hover {
+    font-size: 90px;
+}
+
+
+.OutCBox div img {
+    height: 380px;
+    width: 250px;
+    padding-bottom: 20px;
+}
+
+.OutCBox {
+    display: flex;
+    padding: 50px;
+}
+
+.OutCBox div {
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.OutCBox div a h4 {
+    color: black;
+    font-family: "Matemasie", system-ui;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: rgb(235, 196, 69);
+    border-radius: 10px;
+}
+
+.OutCBox div a h4:hover {
+    text-decoration: none;
+    color: rgb(7, 96, 134);
+ }
+
+.OutCBox div:first-child {
+    display: flexbox;
+}
+
+.OutCBox div:nth-child(2) {
+    display: flexbox;
+}
+
+.OutCBox div:nth-child(3) {
+    display: flexbox;
+}
+
+.OutCBox div:nth-child(3) img {
+    height: 350px;
+    padding-bottom: 30px;
+}
+
+.OutCBox div:nth-child(4) {
+    display: flexbox;
+}
+
+.OutCBox div p {
+    padding: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+
+/* Footer */
+
+/* UpperFooter */
+.upperFooter {
+    height: 300px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.upperFooter  div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.upperFooter  div:first-child h1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline rgba(103, 92, 199, 0.877);
+    width: 200px;
+}
+
+.upperFooter  div:first-child h1 .UFIcon {
+    font-size: 100px;
+    color: rgba(103, 92, 199, 0.877);
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal
+}
+
+.upperFooter div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upperFooter div:nth-child(2) button {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(230, 178, 8);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.upperFooter div:nth-child(2) button .UFIcon {
+    font-size: 80px;
+    color: rgba(103, 92, 199, 0.877);
+}
+
+.upperFooter div:nth-child(2) button:hover {
+    height: 150px;
+    width: 150px;
+}
+
+/* .upperFooter div:nth-child(2) button .UFIcon:hover {
+    font-size: 100px
+} */
+
+/* LowerFooter */
+.lowerFooter {
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+.lowerFooter div:first-child {
+    width: 250px;
+    flex-grow: 0.2;
+}
+
+.lowerFooter div:first-child h1 {
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 50px;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lowerFooter div:nth-child(2) {
+    padding: 80px 50px;
+    display: flexbox;
+    align-items: center;
+}
+
+.lowerFooter div:nth-child(2) h5 {
+    font-size: 50px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: end;
+    padding: 4px;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.lowerFooter div:nth-child(2) h5 .LFIcon {
+    display: flex;
+    color: rgba(255, 196, 0, 0.767);
+
+    padding: 5px 5px;
+    font-size: 20px;
+}
+
+.lowerFooter div:nth-child(2) h5 .LFIcon:hover {
+    font-size: 25px;
+}
+
+Footer p {
+    background-color: black;
+    color: whitesmoke;
+    padding: 0px 50px;
+    padding-bottom: 30px;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+

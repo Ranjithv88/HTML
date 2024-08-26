@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="one">
+        <ul>
+            <li>1</li>
+            <li>2
+                <div class="two">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul></div>
+            </li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+
+    <style>
+
+        div {
+            background-color: black;
+            display: inline;
+            justify-content: space-between;
+            color: whitesmoke;
+        }
+
+        div ul {
+            /* display: flexbox; */
+            color: whitesmoke;
+        }
+
+        div ul:nth-child(2) ul {
+            /* display: flexbox; */
+        }
+
+    </style>
+
+</body>
+</html>

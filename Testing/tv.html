@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var go = 0;
+        window.onload = function() {
+      nu(go);
+    };
+        function number(n){
+            go += n;
+            nu(go);
+        }
+        function nu(n) {
+            const a = document.getElementById('2');
+            const b = document.getElementById('3');
+            const c = document.getElementById('4');
+            switch(n){
+                case 0:
+                a.style.display = 'flex';
+                b.style.display = 'flex';
+                    c.style.display = 'none';
+                break;
+                default:
+                    a.style.display = 'none';
+                    b.style.display = 'none';
+                    c.style.display = 'flex';
+                break;
+            }
+        }
+
+      </script>
+    
+    <div class="outer" >
+        <div class="tv" >
+          <div class="guy" id="1">
+            <a class="chanel01" id="2" href="https://en.wikipedia.org/wiki/Family_Guy" target="_blank" ><img src="../IMAGE/Peter/PeterWebIcons.svg" alt="Family Guy" ></a>
+            <p class="chanel02" id="3" >&nbsp;Family Guy is an American animated sitcom created by Seth MacFarlane for the Fox Broadcasting Company. The series premiered on January 31, 1999, following Super Bowl XXXIII, with the rest of the first season airing from April 11, 1999. The show centers around the Griffins, a dysfunctional family consisting of parents Peter and Lois, their children, Meg, Chris, and Stewie, and their anthropomorphic pet dog, Brian. Set in the fictional city of Quahog, Rhode Island, the show exhibits much of its humor in the form of metafictional cutaway gags that often lampoon American culture.</p>
+            <img class="chanel03" id="4" src="../IMAGE/Peter/no signal .jpeg" alt="" height="600px" width="1029.365px">
+        </div>
+          <div class="f" ><button value="button" onclick="number(-1)" ><i class="bi bi-caret-up-fill tvTriangle"></i></button>
+          <div class="s" ><button value="button" onclick="number(+1)" ><i class="bi bi-caret-down-fill tvTriangle"></i></button></div>
+        </div>
+        </div>
+      </div>
+
+      <style>
+        .outer {
+    padding: 60px 60px;
+    background-color: rgba(27, 20, 28, 1);
+}
+
+.tv {
+    border-top: 28px solid rgba(235, 196, 69, 1);
+    border-right: 8px solid rgba(235, 196, 69, 1);
+    border-bottom: 28px solid rgba(235, 196, 69, 1);
+    border-left: 8px solid rgba(235, 196, 69, 1);
+    border-radius: 90px;
+    padding: 1px 1px;
+    background-color:  rgba(235, 196, 69, 1);
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    box-shadow: 40px 50px rgba(148, 148, 148, 0.644);
+}
+
+.guy {
+    display: flex;
+    height: 600px;
+    width: 85%;
+    background-color: rgba(117, 170, 10, 0.932);
+    border-radius: 90px;
+}
+
+.guy a img {
+    padding-left: 4px;
+    height: 500px; 
+    width: 500px;
+}
+
+.guy a img:hover {
+    padding-left: 4px;
+    height: 550px; 
+    width: 550px;
+}
+
+.guy p {
+    text-align: justify;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 50px;
+}
+
+.f {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flexbox;
+    justify-content: center;
+    background-color: rgba(235, 196, 69, 1);
+    border-radius: 0px 90px 90px 0px;
+    padding-top: 80px;
+}
+
+.s {
+    padding-right: 10px;
+    display: flexbox;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.f button {
+    color: black;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    cursor: pointer; 
+    background-color: rgb(4, 153, 219);
+    box-shadow: 5px 6px 1px rgba(27, 20, 28, 1);
+}
+
+.f button:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.s button {
+    color: black;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    cursor: pointer; 
+    background-color: rgb(4, 153, 219);
+    box-shadow: 5px 6px 1px rgba(27, 20, 28, 1);
+}
+
+.s button:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.tvTriangle {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.f button:hover .tvTriangle {
+    font-size: 34px;
+}
+
+.s button:hover .tvTriangle {
+    font-size: 34px;
+}
+
+/* .chanel01 {
+    display: none;
+} */
+
+.chanel02 {
+    display: none;
+}
+
+      </style>
+
+    
+
+</body>
+</html>

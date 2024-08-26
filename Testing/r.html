@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Guy Profile</title>
+  <style>
+    .guy {
+      background-color: rgba(117, 170, 10, 0.932);
+      border-radius: 90px;
+      padding: 20px;
+    }
+
+    img {
+      height: 200px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="guy" id="guy">
+    <div id="channel1" class="hidden01">
+      <img src="../IMAGE/Peter/no signal .jpeg" alt="No Signal Image">
+      <p>Channel 1 Content</p>
+    </div>
+    <div id="channel2" class="hidden02">
+      <a id="link" href="https://en.wikipedia.org/wiki/Family_Guy" target="_blank">
+        <img src="../IMAGE/Peter/PeterWebIcons.svg" alt="Family Guy">
+      </a>
+      <p id="description">Family Guy is an American animated sitcom created by Seth MacFarlane for the Fox Broadcasting Company...</p>
+    </div>
+  </div>
+
+  <div class="f">
+    <button onclick="number(1)">
+      Show Channel 1
+    </button>
+    <button onclick="number(2)">
+      Show Channel 2
+    </button>
+  </div>
+
+  <script>
+    function number(buttonValue) {
+      // Get references to the channel elements
+      const channel1 = document.getElementById('channel1');
+      const channel2 = document.getElementById('channel2');
+
+      // Toggle visibility based on button value
+      switch(buttonValue) {
+
+      }
+    }
+  </script>
+
+</body>
+</html>
