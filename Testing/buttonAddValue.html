@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Increment Decrement</title>
+</head>
+<body>
+
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.value {
+  font-size: 24px;
+}
+
+.profile {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+    </style>
+
+  <div class="counter">
+    <button onclick="modifyCounter(1)">+1</button>
+    <button onclick="modifyCounter(-1)">-1</button>
+    <div class="value">0</div>
+  </div>
+
+  <button onclick="toggleProfile()">Toggle Profile</button>
+  <div id="profile" class="profile hidden">
+    <h2>Profile Section</h2>
+    <p>This is the profile content.</p>
+  </div>
+
+  <script>
+
+let counterValue = 0;
+
+function modifyCounter(amount) {
+  counterValue += amount;
+  document.querySelector('.value').innerText = counterValue;
+}
+
+function toggleProfile() {
+  const profileDiv = document.getElementById('profile');
+  profileDiv.classList.toggle('hidden');
+}
+
+
+  </script>
+</body>
+</html>

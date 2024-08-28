@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title> <link rel="stylesheet" href="">
+</head>
+<body>
+    
+    <div class="body">
+        <div class="calculator">
+            <h1 class="heding">Calculator</h1>
+            <input type="text" placeholder="0" id="outputScreen">
+            <button onclick="clear()">CL</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="display('%')" >%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('*')">X</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: clock;
+            src: url(../Font/DigitalClock/DS-DIGI.TTF);
+        }
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            background-color: #ecf0f3;
+            outline: none;
+            font-family: sans-serif;
+        }
+        .body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator {
+            background-color: #ecf0f3;
+            padding: 15px;
+            border-radius: 30px;
+            box-shadow: inset -5px -5px 12px #ffffff,
+                        5px 5px 12px rgba(0,0,0,.16);
+            display: grid;
+            grid-template-columns: repeat(4,68px);
+        }
+        h1 {
+            color: black;
+            font-size: 8vh;
+        }
+        input {
+            font-family: clock,system-ui,sans-serif;
+            grid-column: span 4;
+            height: 70px;
+            width: 260px;
+            background-color: #ecf0f3;
+            box-shadow: inset -5px -5px 12px #ffffff,
+                        inset 5px 5px 12px rgba(0,0,0,.16);
+            border: none;
+            border-radius: 30px;
+            color: rgb(70,70,70);
+            font-size: 50px;
+            text-align: end;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        button {
+             height: 48px;
+             width: 48px;
+             background-color: #ecf0f3;
+             box-shadow: -5px -5px 12px #ffffff,
+                        5px 5px 12px rgba(0,0,0,.16);
+            border: none;
+            border-radius: 50%;
+            margin: 8px;
+            font-size: 20px;
+        }
+        .equal{
+            width: 115px;
+            border-radius: 40px;
+            background-color: #ecf0f3;
+             box-shadow: -5px -5px 12px #ffffff,
+                        5px 5px 12px rgba(0,0,0,.16);
+            
+        }
+    </style>
+
+    <script>
+        let output = document.getElementById('outputScreen');
+        function display(num) {
+            if(num == '*'){
+            output.value += 'X';
+            }else{
+                output.value += num;
+            }
+        }
+        function calculate() {
+            try{
+                let multiplication = output.value.replace(/X/g, '*');
+                output.value = eval(multiplication);
+            }catch(error){
+                output.value = " Invalid ! ";
+                
+            }
+        }
+        function clear() {
+            outputScreen.value = "";
+        }
+        function del() {
+            outputScreen.value = outputScreen.value.slice(0,-1);
+        }
+    </script>
+
+</body>
+</html>
+
