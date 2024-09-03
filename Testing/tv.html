@@ -8,13 +8,19 @@
 <body>
 
     <script>
-        var go = 0;
+        var go = 1;
         window.onload = function() {
          nu(go);
         };
         function number(n){
             go += n;
             console.log(go);
+            if (go <= 0) {
+                go = 8;
+            } 
+            else if (go >= 9) {
+                go = 1;
+            }
             document.querySelector('.digital').innerText = go.toString().padStart(2, '0');
             nu(go);
         }
@@ -23,7 +29,7 @@
             const b = document.getElementById('3');
             const c = document.getElementById('4');
             switch(n){
-                case 0:
+                case 1:
                 a.style.display = 'flex';
                 b.style.display = 'flex';
                     c.style.display = 'none';
@@ -179,24 +185,25 @@
 
 @font-face {
     font-family: digitalClock;
-    src: url(Font/digital\Clock/DS-DIGI.TTF);
+    src: url(../Font/DigitalClock/DS-DIGI.TTF);
 }
 
 .digital {
     font-family: digitalClock,sans-serif;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 500;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.950);
     color: rgb(0, 128, 0);
     text-align: center;
-    padding: 18px 18px;
+    padding: 10px 15px;
     margin-top: 80px;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.747),
                 8px 8px 2px rgba(0, 0, 0, 0.849);
+    border: 3px solid rgba(192, 192, 192, 0.863);
 }
 
 

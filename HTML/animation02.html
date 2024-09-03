@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+    <h1>Hello World !</h1>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @keyframes anime {
+            0%{
+                transform: translateY(80vh);
+            }
+            25%{
+                transform: translateX(80vw);
+            }
+            50%{
+                transform: translateY(-80vh);
+            }
+            75%{
+                transform: translateX(-80vw);
+            }
+        }
+        div{
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+        h1{
+            color: white;
+            animation: anime 15s linear 1s infinite normal none;
+        }
+    </style>
+
+</body>
+</html>

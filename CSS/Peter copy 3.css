@@ -288,6 +288,29 @@ header {
     font-size: 34px;
 }
 
+@font-face {
+    font-family: digitalClock;
+    src: url(../Font/DigitalClock/DS-DIGI.TTF);
+}
+
+.digital {
+    font-family: digitalClock,sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.950);
+    color: rgb(0, 128, 0);
+    text-align: center;
+    padding: 10px 15px;
+    margin-top: 80px;
+    border-radius: 15px;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.747),
+                8px 8px 2px rgba(0, 0, 0, 0.849);
+    border: 3px solid rgba(192, 192, 192, 0.863);
+}
+
 
 /* Main Characters Content */
 .outerCharacters {

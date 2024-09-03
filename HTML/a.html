@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <ul class="one">
+            <li>hello</li>
+            <li class="down">hello <ul class="two">
+                <li>world</li>
+                <li>world</li>
+                <li>world</li>
+            </ul></li>
+            <li>hello</li>
+        </ul>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        div{
+            margin: 40px 40px;
+            height: 50vh;
+            width: 50vw;
+        }
+        li{
+            list-style: none;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .one{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: aqua;
+        }
+        .two{
+            visibility: hidden;
+        }
+        .two:hover{
+            visibility: visible;
+        }
+    </style>
+
+</body>
+</html>
