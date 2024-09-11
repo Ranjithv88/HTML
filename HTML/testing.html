@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Style>
+        li {
+            list-style: none;
+            font-size: 50px;
+        }
+        .outer {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            .inner {
+
+            }
+        }
+        .outer a:hover .inner{
+            display: flex;
+        }
+    </Style>
+    
+    <ul class="outer">
+        <li>1</li>
+        <li><a href="">2</a>
+            <ul class="inner">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+            </ul>
+        </li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+</body>
+</html>
+
