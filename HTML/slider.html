@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="Slider">
+        <input type="range" min="1" max="100" value="5">
+    </div>
+
+    <style>
+        body {
+            min-height: 100vh;
+            font-family: 'roboto',Arial,sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #275EFE;
+        }
+        .Slider {
+            --line-background: rgba(255, 255, 255, 0.6);
+            --line-active: #fff;
+            --handle-background: #275EFE;
+            --line-border: #fff;
+            --line-text-color: #fff;
+            --smoke-background: #fff;
+            --smoke-shadow: inset 3px 3px 0 0 #E1E6E9;
+            max-width: 320px;
+            width: 100%;
+        }
+        .Slider .rangeSlider .rangeSlider_handle {
+            width: 33px;
+            height: 33px;
+            left: 0;
+            top: 2px;
+            z-index: 2;
+            position: absolute;
+            cursor: pointer;
+        }
+        .Slider .rangeSlider {
+            width: 100%;
+            height: 3px;
+            position: relative;
+        }
+    </style>
+
+</body>
+</html>

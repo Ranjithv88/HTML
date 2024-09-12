@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection {
+            background: #212129;
+        }
+        .search-wrapper {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+        .search-wrapper .input-holder {
+            height: 70px;
+            width: 70px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 6px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-wrapper">
+        <div class="input-holder">
+            <input type="text" class="search-input" placeholder="Type to search "/>
+            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+        </div>
+        <span class="close"  onclick="searchToggle(this, event);"></span>
+    </div>
+
+
+    <Script>
+        function searchToggle (obj, evt) {
+            var container = $(obj).closest('search-wrapper');
+            if (!container.hasClass('active')){
+                container.addClass('active');
+                evt.preventDefault(); 
+            }
+        }
+    </Script>
+
+</body>
+</html>
