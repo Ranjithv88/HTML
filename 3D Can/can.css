@@ -108,7 +108,7 @@ header .author img {
 }
 
 .banner .product:hover {
-    --left: 1180px;
+    --left: 1886px;
     transform: translateX(-50%) translateY(-120px);
 }
 
