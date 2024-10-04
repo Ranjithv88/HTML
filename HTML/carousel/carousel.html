@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-transform: uppercase;
+            transition: 1s;
+        }
+        header{
+            background-color: transparent;
+            position: fixed;
+            padding: 0 10vh;
+            width: 98vw;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: system-ui;
+            font-weight: bold;
+            z-index: 8;
+            h1{
+                cursor: pointer;
+            }
+            ul {
+                display: flex;
+                text-decoration: none;
+                list-style: none;
+                gap: 20px;
+                cursor: pointer;
+            }
+        }
+        main{
+            .item{
+                width: 100%;
+                height: 100%;
+                background-color: var(--background);
+                position: absolute;
+                z-index: 2;
+                .content{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 180px;
+                    color: rgb(238, 238, 238);
+                    font-weight: bold;
+                    font-family: system-ui;
+                    text-align: center;
+                }
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 90%;
+                }
+            }
+            button {
+                z-index: 5;
+                height: 10vh;
+                width: 10vh;
+                background-color: rgb(255, 255, 255);
+                color: black;
+                position: absolute;
+                border: none;
+                font-size: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .btn1 {
+                position: absolute;
+                top: 50%;
+                left: 10%;
+            }
+            .btn2 {
+                position: absolute;
+                top: 50%;
+                left: 90%;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ranjith</h1>
+        <ul>
+            <li>home</li>
+            <li>Shop</li>
+            <li>About</li>
+        </ul>
+    </header>
+    <main>
+        <div class="item active" style="--background: #EA3D41">
+            <div class="content">Strawberry</div>
+            <img src="./Image/fruit_strawberry.png" class="fruit">
+        </div>
+        <div class="item center" style="--background: #2D5643">
+            <div class="content">avocado</div>
+            <img src="./Image/fruit_avocado.png" class="fruit">
+        </div>
+        <div class="item hidden" style="--background: #E7A043">
+            <div class="content">orange</div>
+            <img src="./Image/fruit_orange.png" class="fruit">
+        </div>
+        <button class="btn1" type="button"><</button><button class="btn2" type="button">></button>
+    </main>
+</body>
+    <footer>
+        <script>
+            let next = document.getElementsByClassName('btn1');
+            let prev = document.getElementsByClassName('btn2');
+            let active = 1;
+            window.onload=() =>{
+                changeCarousel();
+            }
+            next.onclick = () => {
+                active +1;
+                console.log(active)
+                changeCarousel();
+            }
+            prev.onclick = () => {
+                active -1;
+                console.log(active)
+                changeCarousel();
+            }
+            function changeCarousel() {
+                let first = document.getElementsByClassName('active');
+                let center = document.getElementsByClassName('center');
+                let hidden = document.getElementsByClassName('hidden');
+                switch(active){
+                    case 1:
+                        first.style.display = 'block';
+                        center.style.display = 'none';
+                        hidden.style.display = 'none';
+                    break;
+                    case 2:
+                        first.style.display = 'none';
+                        center.style.display = 'block';
+                        hidden.style.display = 'none';
+                    break;
+                    case 3:
+                        first.style.display = 'none';
+                        center.style.display = 'none';
+                        hidden.style.display = 'block';
+                    break;
+                }
+            }
+        </script>
+    </footer>
+</html>
