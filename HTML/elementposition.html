@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element Position</title>
+</head>
+<body>
+  <div id="myElement" style="width: 100px; height: 100px; background-color: red; display: flex; justify-content: center; align-items: center;">
+    My Element
+  </div>
+
+  <script>
+    // Select the element
+    var element = document.getElementById("myElement");
+
+    // Get the position and size of the element
+    var rect = element.getBoundingClientRect();
+    
+    console.log("Element Position:");
+    console.log("Top: " + rect.top + "px");
+    console.log("Left: " + rect.left + "px");
+    console.log("Bottom: " + rect.bottom + "px");
+    console.log("Right: " + rect.right + "px");
+  </script>
+</body>
+</html>
+
