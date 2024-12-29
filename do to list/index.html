@@ -1,0 +1,253 @@
+<!-- Html For Do To List -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do To List</title>
+    <!-- Css For Do To List -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            overflow-x: hidden;
+            padding: 20px;
+            gap: 20px;
+            background-image: url('./background\ Image.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            h1{
+                font-family: 'Canicule';
+                font-size: 40px;
+                font-weight: 800;
+                padding: 20px 0px;
+            }
+            .inputBox {
+                width: 50vw;
+                padding: 10px;
+                border-radius: 25px 5px 5px 25px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid transparent;
+                background-color: rgb(255, 255, 255);
+                input{
+                    width: 20vw;
+                    padding: 8px;
+                    padding-left: 20px;
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                    font-weight: 800;
+                    background-color: transparent;
+                    font-family: 'blinkmacsystem-light';
+                }
+                button {
+                    font-family: 'blinkmacsystem-bold';
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 10px, rgba(17, 17, 26, 0.1) 0px 8px 14px, rgba(17, 17, 26, 0.1) 0px 16px 26px;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 2px solid transparent;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 15px;
+                    background-color: rgba(0, 5, 159, 1);
+                    color: rgba(255, 255, 255, 1);
+                    transition: 1s;
+                    &:hover {
+                        border: 2px solid rgba(0, 5, 159, 1);
+                        color: rgba(0, 5, 159, 1);
+                        background-color: rgba(255, 255, 255, 1);
+                    }
+                }
+                &:has(input:invalid) {
+                    border-color: rgba(255, 0, 0, 1);
+                }
+            }
+            .Empty {
+                height: 10vh;
+            }
+            table {
+                width: 70vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: rgb(255, 255, 255);
+                box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+                border-radius: 1px;
+                div {
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-items: center;
+                    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    input[type="checkbox"]{
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        background-color: rgba(0, 86, 59, 1);
+                        &:checked{
+                            accent-color: rgba(0, 86, 59, 1);
+                        }
+                    }
+                    h1{ 
+                        width: 30vw;
+                        font-family: 'blinkmacsystem-light';
+                        font-size: 20px;
+                        font-weight: 800;
+                    }
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        button {
+                            font-family: 'blinkmacsystem-bold';
+                            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                            font-size: 16px;
+                            background-color: rgba(158, 27, 50, 1);
+                            color: rgba(255, 255, 255, 1);
+                            border: none;
+                            cursor: pointer;
+                            padding: 5px 20px;
+                            border-radius: 4px;
+                            border: 2px solid transparent;
+                            transition: 1s;
+                            &:hover{
+                                box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+                                color: rgba(158, 27, 50, 1);
+                                background-color: rgba(255, 255, 255, 1);
+                                border: 2px solid rgba(158, 27, 50, 1);
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @font-face {
+            font-family: blinkmacsystem-light;
+            src: url('./blinkmacsystemfont-light.otf');
+        }
+        @font-face {
+            font-family: blinkmacsystem-bold;
+            src: url('./blinkmacsystemfont-bold.otf');
+        }
+        @font-face {
+            font-family: Canicule;
+            src: url('./Canicule.otf');
+        }
+    </style>
+</head>
+<body>
+    <h1>Do To list</h1>
+    <div class="inputBox">
+        <input id="input" type="text" placeholder="User........!" minlength="2" massage="At Least Minium 2 characters......! ">
+        <button type="button" onclick="addRow()">Add User</button>
+    </div>
+    <div class="Empty"></div>
+    <table id="tableBody">
+       
+    </table>
+</body>
+<footer>
+    <!-- JavaScriptFor Do To List -->
+    <script>
+        // Declaration the variables 
+        let userData = []
+        const table = document.getElementById("tableBody")
+        const input = document.getElementById("input")
+
+        // Initial data load
+        window.onload = () =>{
+            const storedUserString = localStorage.getItem("toDoList")
+            if (storedUserString) 
+                userData = JSON.parse(storedUserString)
+            else 
+                userData = [{"name": "ranjith Kumar", "status": true},{"name": "Vignesh", "status": false},{"name": "Selva Kumar", "status": true,},{"name":"John", "status": false}]
+            tableDataList()
+        }
+
+        // Input Enter to Add row function 
+        input.addEventListener("keypress",()=>{
+            if(event.key === "Enter"){
+                addRow()
+            }
+        })
+
+        // add ror Function
+        const addRow = () => {
+            const inputValue = input.value.trim()
+            if (inputValue) {
+                const nameExists = userData.some(user => user.name.includes(inputValue))
+                if(!nameExists){
+                    userData.push({'status': false,'name': inputValue})
+                    Array.from(table.children).forEach(child => table.removeChild(child))
+                    tableDataList()
+                }else{
+                    alert("Name already exists....!")
+                    input.value = ""
+                }
+            } else {
+                alert("Please enter a name....!")
+            }
+        }
+
+        // delete row Function
+        const deleteRow = (row) => {
+            let text = row.children[1].innerText
+            Array.from(table.children).forEach(child => table.removeChild(child))
+            let newTableDataList = userData.filter(arrayValue => arrayValue.name != text)
+            userData = newTableDataList
+            tableDataList()
+        }
+
+        // data process 
+        const tableDataList =()=> {
+            for(let i = 0; i < userData.length; i++){
+                const row = document.createElement("div")
+                const checkbox = document.createElement("input")
+                checkbox.type = "checkbox"
+                checkbox.checked = userData[i].status
+                checkbox.onchange =()=> inputChecked(row)
+                row.appendChild(checkbox)
+                const nameCell = document.createElement("h1")
+                nameCell.textContent = userData[i].name
+                row.appendChild(nameCell)
+                const buttonDiv = document.createElement("div")
+                const deleteButton = document.createElement("button")
+                deleteButton.textContent = "Delete"
+                deleteButton.onclick = () => deleteRow(row)
+                buttonDiv.appendChild(deleteButton)
+                row.appendChild(buttonDiv)
+                table.appendChild(row)
+            }
+            input.value = ""
+            console.log("Current userData:", userData)
+            localStorage.setItem("toDoList", JSON.stringify(userData))
+        }
+
+        // input checked Function
+        const inputChecked = (row) => {
+            Array.from(table.children).forEach(child => table.removeChild(child))
+            let text = row.children[1].innerText
+            const index = userData.findIndex(user => user.name === text)
+            userData.splice(index, 1, { name: text, status: !userData[index].status })
+            tableDataList()
+        }
+    </script>
+</footer>
+</html>
+
